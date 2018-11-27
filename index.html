@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <title>Title</title>
+    <!--rem适配-->
+    <script type="text/javascript">
+        var fontSize=document.documentElement.clientWidth/20;
+        document.querySelector('html').style.fontSize=fontSize+'px';
+        //在屏幕缩放时修改fontSize
+        window.onresize=function(){
+            var fontSize = window.screen.availWidth / 20;
+            document.querySelector('html').style.fontSize=fontSize+'px';
+        }
+    </script>
+    <!--导入swiper的css-->
+    <link rel="stylesheet" href="lib/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <!--loading页面-->
+    <div class="loading">
+        <div class="rider"></div>
+        <div class="progress">
+            <div class="step"></div>
+            <!-- /.step -->
+        </div>
+        <div class="loading-txt"></div>
+        <div class="logo"></div>
+        <div class="desc">@ 2017 Baidu WaiMai Produced</div>
+        <!-- /.progress -->
+        <!-- /.rider -->
+    </div>
+    <!--欢迎页面-->
+    <div class="welcome">
+        <!-- /.info -->
+        <div class="info">
+            <div class="hello"></div>
+            <!-- /.hello -->
+        </div>
+        <div class="cloud"></div>
+        <div class="grass1"></div>
+        <!-- /.bear-box -->
+        <div class="bear-box">
+            <div class="bear"></div>
+            <div class="smoke"></div>
+            <!-- /.smoke -->
+            <!-- /.bear -->
+        </div>
+        <div class="tree"></div>
+        <div class="grass2"></div>
+        <div class="btn-box">
+            <div class="btn"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <!-- /.circle1 -->
+            <!-- /.btn -->
+        </div>
+        <!-- /.grass2 -->
+        <!-- /.tree -->
+        <!-- /.grass1 -->
+    </div>
+    <!--轮播页面-->
+    <div class="waimai-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page1">
+                <div class="title">
+                    <h3>生活中,</h3>
+                    <p>经常有这种时候...</p>
+                    <div class="line"></div>
+                </div>
+                <div class="scroll-page1">
+                    <div class="bg"></div>
+                    <div class="person">
+                        <div class="files">
+                            <div class="paper1"></div>
+                            <div class="paper2"></div>
+                            <!-- /.paper2 -->
+                            <!-- /.paper -->
+                        </div>
+                        <!-- /.files -->
+                    </div>
+                    <div class="message-container">
+                        <div class="info"></div>
+                        <!-- /.info -->
+                    </div>
+                </div>
+                <div class="scroll-page2">
+                    <div class="bg"></div>
+                    <div class="person">
+                        <div class="leg1"></div>
+                        <div class="leg2"></div>
+                        <!-- /.leg2 -->
+                        <!-- /.leg1 -->
+                    </div>
+                    <div class="message-container">
+                        <div class="info"></div>
+                        <!-- /.info -->
+                    </div>
+                </div>
+                <div class="scroll-page3">
+                    <div class="bg"></div>
+                    <div class="person">
+                        <div class="word1"></div>
+                        <div class="word2"></div>
+                        <div class="word3"></div>
+                        <div class="word4"></div>
+                        <!-- /.word1 -->
+                    </div>
+                    <div class="message-container">
+                        <div class="info"></div>
+                        <!-- /.info -->
+                    </div>
+                </div>
+                <div class="bear"></div>
+                <div class="sphere"></div>
+                <!-- /.bear -->
+            </div>
+            <div class="swiper-slide page2">
+                <div class="title">
+                    <h3>这时候,</h3>
+                    <p>如果有一份美味外卖...</p>
+                    <p>正好出现...</p>
+                    <div class="line"></div>
+                </div>
+                <div class="scroll-page1">
+                    <div class="bg"></div>
+                    <div class="person">
+                        <div class="face1"></div>
+                        <div class="face2"></div>
+                        <div class="hand-left"></div>
+                        <div class="hand-right"></div>
+                        <!-- /.hand-right -->
+                        <!-- /.hand-left -->
+                        <!-- /.face2 -->
+                        <!-- /.face1 -->
+                    </div>
+                    <div class="table"></div>
+                    <div class="food"></div>
+                    <!-- /.food -->
+                    <!-- /.table -->
+                    <div class="sphere"></div>
+                    <!-- /.sphere -->
+
+                </div>
+            </div>
+            <div class="swiper-slide page3">
+                <div class="title">
+                    <h3>这时候,</h3>
+                    <p>如果有一份美味外卖...</p>
+                    <p>正好出现...</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bg"></div>
+                <div class="bear"></div>
+                <!--踢牌子的熊-->
+                <div class="animation-bear-box">
+                    <div class="bear1"></div>
+                    <div class="bear2"></div>
+                    <div class="bear3"></div>
+                    <!-- /.bear1 -->
+                </div>
+                <!-- /.animation-bear-box -->
+                <div class="sphere"></div>
+                <div class="normal-box">
+                    <div class="license"></div>
+                    <div class="oil"></div>
+                    <div class="evil"></div>
+                </div>
+                <!-- /.normal-box -->
+                <!--踢牌子碎了-->
+                <div class="hit-card-box">
+                    <div class="card1"></div>
+                    <div class="card2"></div>
+                    <div class="card3"></div>
+                    <!-- /.card1 -->
+                </div>
+                <!-- /.hit-card-box -->
+                <!-- /.evil -->
+                <!-- /.oil -->
+                <!-- /.license -->
+                <!-- /.sphere -->
+                <!-- /.bear -->
+                <!-- /.bg -->
+            </div>
+            <div class="swiper-slide page4">
+                <div class="title">
+                    <h3>百度外卖</h3>
+                    <p>只做有品质的外卖...</p>
+                    <p>操作快捷...</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bg"></div>
+                <div class="bear"></div>
+                <div class="sphere"></div>
+                <div class="card1"></div>
+                <div class="card2"></div>
+                <div class="card3"></div>
+            </div>
+            <div class="swiper-slide page5">
+                <div class="title">
+                    <h3>无论前方</h3>
+                    <p>狂风,大雨,还是飘雪...</p>
+                    <p>始终坚持在路上...</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bg"></div>
+                <div class="bear">
+                    <div class="smoke"></div>
+                    <!-- /.smoke -->
+                </div>
+                <div class="sphere"></div>
+                <div class="cloud"></div>
+                <!-- /.clound -->
+                <!-- /.sphere -->
+                <!-- /.bear -->
+                <!-- /.bg -->
+            </div>
+            <div class="swiper-slide page6">
+                <div class="title">
+                    <h3>丰富礼品</h3>
+                    <p>让你边吃,边省钱...</P>
+                    <div class="line"></div>
+                </div>
+                <div class="bg"></div>
+                <div class="bear">
+                    <div class="gift-box">
+                        <div class="gift1"></div>
+                        <!-- /.gift1 -->
+                        <div class="gift2"></div>
+                        <!-- /.gift2 -->
+                        <div class="gift3"></div>
+                        <!-- /.gift3 -->
+                        <div class="gift4"></div>
+                        <!-- /.gift4 -->
+                        <div class="gift5"></div>
+                        <!-- /.gift5 -->
+                        <div class="gift6"></div>
+                        <!-- /.gift6 -->
+                        <div class="gift7"></div>
+                        <!-- /.gift7 -->
+                        <div class="gift8"></div>
+                        <!-- /.gift8 -->
+                        <div class="gift9"></div>
+                        <!-- /.gift9 -->
+                        <div class="gift10"></div>
+                        <!-- /.gift10 -->
+                        <div class="gift11"></div>
+                        <!-- /.gift11 -->
+                        <div class="gift12"></div>
+                        <!-- /.gift12 -->
+                    </div>
+                    <!-- /.gift-box -->
+                </div>
+                <div class="sphere"></div>
+                <!-- /.sphere -->
+                <!-- /.bear -->
+                <!-- /.bg -->
+            </div>
+            <div class="swiper-slide page7">
+                <div class="title">
+                    <h3>所有的努力</h3>
+                    <p>就是为了健康美味的外卖...</p>
+                    <p>呈现给你...</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bg">
+                    <div class="lamplight"></div>
+                    <!-- /.lamplight -->
+                </div>
+                <div class="moto"></div>
+                <div class="bear"></div>
+                <div class="sphere"></div>
+                <div class="share"></div>
+                <div class="baidu">waimai.baidu.com</div>
+                <!-- /.waimai -->
+                <!-- /.share -->
+                <!-- /.sphere -->
+                <!-- /.bear -->
+                <!-- /.moto -->
+                <!-- /.bg -->
+            </div>
+            <!-- /.swiper-slide -->
+        </div>
+        <!-- /.slide-wrapper -->
+    </div>
+    <!--音频播放-->
+    <audio loop src="music/hlw.mp3"></audio>
+    <div class="audioControl"></div>
+    <!-- /.audioControl -->
+    <!-- /.waimai-container -->
+</body>
+</html>
+<!--导入swiper的js-->
+<script src="lib/swiper/dist/js/swiper.min.js"></script>
+<!--导入zepto-->
+<script src="lib/zepto/src/zepto.js"></script>
+<script src="lib/zepto/src/fx.js"></script>
+<script src="lib/zepto/src/fx_methods.js"></script>
+<script src="lib/zepto/src/touch.js"></script>
+<script src="lib/zepto/src/event.js"></script>
+<script type="text/javascript">
+    var swiper=new Swiper('.waimai-container',{
+        direction: 'vertical',
+        on: {
+            slideChangeTransitionEnd: function(){
+                //alert(this.activeIndex);//切换结束时，告诉我现在是第几个slide
+                $('.swiper-slide').eq(swiper.activeIndex).addClass('animate').siblings().removeClass('animate');
+                if(swiper.activeIndex===2){
+                    $('.swiper-slide').eq(2).addClass('swiper-no-swiping');
+                }
+                //获取上一页的所引值,也就是page3的索引值,并还原样式
+                if(swiper.previousIndex===2){
+                    $('.swiper-slide').eq(2).find('.bear').attr('style','');
+                    $('.animation-bear-box div').attr('style','');
+                    $('.normal-box div').attr('style','');
+                    $('.hit-card-box div').attr('style','');
+                }
+            },
+        },
+        //禁止滑动
+
+    });
+    //点击消失
+    $('.loading').click(function(){
+        $(this).fadeOut()
+    });
+    $('.welcome').click(function(){
+        $(this).fadeOut()
+    });
+    $(function () {
+        //使用js让loading添加animate类，并使动画消失
+        setTimeout(function(){
+            $('.loading').addClass("animate");
+            //动画消失,原生js
+           /* document.querySelector('.loading .step').addEventListener('animationend',function(){
+                $('.loading').fadeOut(1000);
+            });*/
+            //使用jq
+            $('.loading .step').on('animationend',function(){
+                $('.loading').fadeOut(1000,function(){
+                    $('.welcome').addClass('animate');
+                })
+
+            })
+        },1000);
+        //welcome页面长按按钮,进入page1
+        $('.welcome .btn-box').longTap(function(){
+            $('.bear-box').css('animation','bearDisappear 1s forwards');
+            setTimeout(function(){
+                $('.welcome').fadeOut(1000,function(){
+                    $(this).css('display', 'none');
+                    $('.page1').addClass('animate')
+                })
+            },1000)
+
+
+        });
+        //page3点击后接触禁止滑动
+        $('.swiper-slide').eq(2).click(function(){
+            $('.swiper-slide').eq(2).children('.bear').css('animation','none');
+            var index=0;
+            timer=setInterval(function(){
+                $('.animation-bear-box div').css('opacity',0);
+                $('.animation-bear-box div').eq(index).css('opacity',1);
+                $('.normal-box div').css('animation','none');
+                $('.hit-card-box div').eq(index).css('opacity',1);
+                if(index===2){
+                    clearInterval(timer);
+                    $('.hit-card-box div').css('animation','bearDisappear 1s forwards');
+                    //掉完了，开启滑动
+                    $('.swiper-slide').eq(2).removeClass('swiper-no-swiping');
+                }
+                index++;
+            },1000)
+        })
+        //控制音频播放
+        var audio=document.querySelector('audio');
+        $('.audioControl').click(function(){
+            if(audio.paused){
+                audio.play();
+                $(this).css('background-image','url(images/play.png)');
+            }else{
+                audio.pause();
+                $(this).css('background-image','url(images/pause.png)');
+            }
+        })
+    })
+</script>

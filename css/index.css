@@ -1,0 +1,2026 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  *zoom: 1;
+}
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+html,
+body {
+  height: 100%;
+}
+/*loading页面*/
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #ffece9;
+  z-index: 3;
+}
+.loading .rider {
+  position: absolute;
+  background: url("../images/loading/rider1_.png") no-repeat center / cover;
+  width: 4.8125rem;
+  height: 3.78125rem;
+  top: 7.28125rem;
+  right: 3.375rem;
+}
+.loading .progress {
+  position: absolute;
+  top: 11.25rem;
+  width: 13rem;
+  height: 0.625rem;
+  border-radius: 0.875rem;
+  border: 2px solid #373838;
+  left: 50%;
+  margin-left: -6.5rem;
+}
+.loading .progress .step {
+  height: 100%;
+  width: 20%;
+  background-color: #fc2e4d;
+  position: absolute;
+  right: 0;
+}
+.loading .loading-txt {
+  position: absolute;
+  background: url("../images/loading/loading-txt.png") no-repeat center / cover;
+  width: 6.875rem;
+  height: 0.875rem;
+  top: 13.75rem;
+  left: 50%;
+  margin-left: -3.4375rem;
+}
+.loading .logo {
+  position: absolute;
+  background: url("../images/loading/waimai-logo.png") no-repeat center / cover;
+  width: 5.0625rem;
+  height: 1.21875rem;
+  bottom: 3.65625rem;
+  left: 50%;
+  margin-left: -2.53125rem;
+}
+.loading .desc {
+  text-align: center;
+  color: #ed8895;
+  position: absolute;
+  width: 100%;
+  bottom: 2.1875rem;
+}
+/*loading页面动画*/
+@keyframes step {
+  to {
+    width: 100%;
+  }
+}
+@keyframes rider {
+  10% {
+    transform: translateX(-0.8125rem) translateY(-0.15625rem);
+  }
+  20% {
+    transform: translateX(-1.625rem) translateY(0.15625rem);
+  }
+  30% {
+    transform: translateX(-2.4375rem) translateY(-0.15625rem);
+  }
+  40% {
+    transform: translateX(-3.25rem) translateY(0.15625rem);
+  }
+  50% {
+    transform: translateX(-4.0625rem) translateY(-0.15625rem);
+  }
+  60% {
+    transform: translateX(-4.875rem) translateY(0.15625rem);
+  }
+  70% {
+    transform: translateX(-5.6875rem) translateY(-0.15625rem);
+  }
+  80% {
+    transform: translateX(-6.5rem) translateY(0.15625rem);
+  }
+  90% {
+    transform: translateX(-7.3125rem) translateY(-0.15625rem);
+  }
+  100% {
+    transform: translateX(-8.125rem) translateY(0.15625rem);
+  }
+}
+.loading.animate {
+  /*使用css使动画播完自动消失*/
+  /*opacity: 0;
+  transition: all .5s 1s;*/
+}
+.loading.animate .step {
+  animation: step 1s linear forwards;
+}
+.loading.animate .rider {
+  animation: rider 1s linear forwards;
+}
+/*welcome页面*/
+.welcome {
+  position: absolute;
+  top: 0;
+  background-color: deepskyblue;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.welcome .info {
+  position: absolute;
+  top: 1.3125rem;
+  width: 12.40625rem;
+  height: 7rem;
+  background: url("../images/page1/theme-title.png") no-repeat center / cover;
+  left: 50%;
+  margin-left: -6.203125rem;
+}
+.welcome .info .hello {
+  position: absolute;
+  width: 2.1875rem;
+  height: 2.34375rem;
+  top: 0.625rem;
+  right: 0.25rem;
+  background: url("../images/page1/hello.png") no-repeat center / cover;
+}
+.welcome .bear-box {
+  position: absolute;
+  width: 5.21875rem;
+  height: 8.71875rem;
+  bottom: 10.8125rem;
+  left: 50%;
+  margin-left: -2.609375rem;
+}
+.welcome .bear-box .bear {
+  width: 100%;
+  height: 100%;
+  background: url("../images/page1/rider2.png") no-repeat center / cover;
+}
+.welcome .bear-box .smoke {
+  position: absolute;
+  bottom: 0;
+  width: 5.21875rem;
+  height: 1rem;
+  background: url("../images/page1/jet1.png") no-repeat center / cover;
+}
+.welcome .cloud {
+  position: absolute;
+  width: 20rem;
+  height: 21.03125rem;
+  bottom: 0;
+  background: url("../images/page1/clouds.png") no-repeat center / cover;
+}
+.welcome .grass1 {
+  position: absolute;
+  width: 20rem;
+  height: 12.375rem;
+  bottom: 0;
+  background: url("../images/page1/grass1.png") no-repeat center / cover;
+}
+.welcome .tree {
+  position: absolute;
+  width: 18.71875rem;
+  height: 2.21875rem;
+  bottom: 11rem;
+  left: 50%;
+  margin-left: -9.359375rem;
+  background: url("../images/page1/trees.png") no-repeat center / cover;
+}
+.welcome .grass2 {
+  position: absolute;
+  width: 20rem;
+  height: 7.125rem;
+  bottom: 0;
+  background: url("../images/page1/grass2.png") no-repeat center / cover;
+}
+.welcome .btn-box {
+  position: absolute;
+  width: 6.5rem;
+  height: 6.5rem;
+  bottom: 2.6875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  margin-left: -3.25rem;
+}
+.welcome .btn-box .btn {
+  width: 3.875rem;
+  height: 3.53125rem;
+  background: url("../images/page1/bear-btn-pre.png") no-repeat center / cover;
+}
+.welcome .btn-box .circle1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../images/page1/circle1.png") no-repeat center / cover;
+}
+.welcome .btn-box .circle2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../images/page1/circle2.png") no-repeat center / cover;
+}
+/*welcom页面动画*/
+.welcome .grass1 {
+  height: 3.125rem;
+}
+.welcome .grass2 {
+  opacity: 0;
+}
+.welcome .tree {
+  opacity: 0;
+}
+.welcome .btn-box {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+.welcome .bear-box {
+  opacity: 0;
+}
+.welcome .smoke {
+  opacity: 0;
+}
+.welcome .info {
+  opacity: 0;
+}
+.welcome .hello {
+  opacity: 0;
+}
+/*帧动画开始*/
+@keyframes grass1 {
+  to {
+    height: 12.375rem;
+  }
+}
+@keyframes grass2 {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes tree {
+  from {
+    transform: translateY(-200%);
+  }
+  80% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes btnAppear {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bearDown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes uptodown {
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes smoke {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes bearDisappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%) scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+.welcome.animate .grass1 {
+  animation: grass1 1s ease forwards;
+}
+.welcome.animate .grass2 {
+  animation: grass2 0.5s 0.5s forwards;
+}
+.welcome.animate .tree {
+  animation: tree 0.5s 1s forwards;
+}
+.welcome.animate .btn-box {
+  animation: btnAppear 0.5s 1.5s forwards;
+}
+.welcome.animate .circle2 {
+  animation: rotate 1s infinite linear ;
+}
+.welcome.animate .bear-box {
+  animation: bearDown 0.5s 2s forwards;
+}
+.welcome.animate .bear {
+  animation: uptodown 0.5s 2.5s infinite;
+}
+.welcome.animate .smoke {
+  animation: smoke 0.5s 2.5s infinite;
+}
+.welcome.animate .info {
+  animation: bearDown 0.5s 3s forwards;
+}
+.welcome.animate .hello {
+  animation: smoke 0.5s 3.5s forwards;
+}
+/*swiper页面*/
+.waimai-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+/*轮播页面*/
+/*title动画*/
+.title h3 {
+  opacity: 0;
+}
+.title p {
+  opacity: 0;
+}
+.title .line {
+  height: 0% !important;
+}
+@keyframes right2left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes line {
+  to {
+    height: 100%;
+  }
+}
+.swiper-slide.animate .title h3 {
+  animation: right2left 0.5s forwards;
+}
+.swiper-slide.animate .title p {
+  animation: right2left 0.5s 0.2s forwards;
+}
+.swiper-slide.animate .title .line {
+  animation: line 0.5s 0.5s forwards;
+}
+/*page1*/
+.page1 {
+  background: #be8651;
+}
+.page1 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0 0 0.46875rem 0.46875rem;
+}
+.page1 .title h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.page1 .title p {
+  font-size: 0.75rem;
+  color: #ffffff;
+  padding-top: 0.375rem;
+}
+.page1 .title .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #ffffff;
+}
+.page1 .scroll-page1 .bg {
+  position: absolute;
+  bottom: 7.875rem;
+  background: url("../images/page2/bg1.png") no-repeat center / cover;
+  width: 18rem;
+  height: 17.90625rem;
+  left: 50%;
+  margin-left: -9rem;
+}
+.page1 .scroll-page1 .person {
+  position: absolute;
+  bottom: 9.0625rem;
+  background: url("../images/page2/front1.png") no-repeat center / cover;
+  width: 13.71875rem;
+  height: 10.90625rem;
+  left: 50%;
+  margin-left: -6.859375rem;
+  z-index: 3;
+}
+.page1 .scroll-page1 .person .files {
+  position: absolute;
+  bottom: 3.25rem;
+  background: url("../images/page2/papers.png") no-repeat bottom right;
+  background-size: 3.59375rem 3.5625rem;
+  width: 2.65625rem;
+  height: 1.5625rem;
+}
+.page1 .scroll-page1 .person .files .paper1 {
+  position: absolute;
+  background: url("../images/page2/papers.png") no-repeat 0 -1rem;
+  background-size: 3.59375rem 3.5625rem;
+  width: 2.6875rem;
+  height: 0.8125rem;
+  bottom: 1.40625rem;
+  right: 2.1875rem;
+}
+.page1 .scroll-page1 .person .files .paper2 {
+  position: absolute;
+  background: url("../images/page2/papers.png") no-repeat -1.40625rem 0;
+  background-size: 3.59375rem 3.5625rem;
+  width: 2rem;
+  height: 0.625rem;
+  bottom: 2.5rem;
+  left: 1rem;
+}
+.page1 .scroll-page1 .message-container {
+  position: absolute;
+  bottom: 4.375rem;
+  right: 4.375rem;
+  background: url("../images/page2/txt-bubbl.png") no-repeat center / cover;
+  width: 11.34375rem;
+  height: 3.71875rem;
+  left: 50%;
+  margin-left: -5.671875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.page1 .scroll-page1 .message-container .info {
+  background: url("../images/page2/txt-work.png") no-repeat center / cover;
+  width: 7.8125rem;
+  height: 0.96875rem;
+}
+.page1 .scroll-page2 .bg {
+  position: absolute;
+  bottom: 7.875rem;
+  background: url("../images/page2/bg2.png") no-repeat center / cover;
+  width: 18.1875rem;
+  height: 16.25rem;
+  left: 50%;
+  margin-left: -9.09375rem;
+}
+.page1 .scroll-page2 .person {
+  position: absolute;
+  bottom: 8.4375rem;
+  background: url("../images/page2/relax.png") no-repeat center / cover;
+  width: 13.625rem;
+  height: 10.375rem;
+  left: 50%;
+  margin-left: -6.8125rem;
+  z-index: 3;
+}
+.page1 .scroll-page2 .person .leg1 {
+  position: absolute;
+  background: url("../images/page2/leg1.png") no-repeat center / cover;
+  width: 3.53125rem;
+  height: 0.75rem;
+  left: 6.09375rem;
+  bottom: 3.4375rem;
+}
+.page1 .scroll-page2 .person .leg2 {
+  position: absolute;
+  background: url("../images/page2/leg2.png") no-repeat center / cover;
+  width: 2.65625rem;
+  height: 2.21875rem;
+  left: 6.03125rem;
+  bottom: 3.75rem;
+}
+.page1 .scroll-page2 .message-container {
+  position: absolute;
+  bottom: 4.375rem;
+  right: 4.375rem;
+  background: url("../images/page2/txt-bubbl.png") no-repeat center / cover;
+  width: 11.34375rem;
+  height: 3.71875rem;
+  left: 50%;
+  margin-left: -5.671875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.page1 .scroll-page2 .message-container .info {
+  background: url("../images/page2/txt-life.png") no-repeat center / cover;
+  width: 7rem;
+  height: 0.96875rem;
+}
+.page1 .scroll-page3 .bg {
+  position: absolute;
+  bottom: 8.4375rem;
+  background: url("../images/page2/bg3.png") no-repeat center / cover;
+  width: 17.53125rem;
+  height: 16.125rem;
+  left: 50%;
+  margin-left: -8.765625rem;
+}
+.page1 .scroll-page3 .person {
+  position: absolute;
+  bottom: 8.4375rem;
+  background: url("../images/page2/person.png") no-repeat center / cover;
+  width: 15.71875rem;
+  height: 7.15625rem;
+  left: 50%;
+  margin-left: -7.859375rem;
+  z-index: 3;
+}
+.page1 .scroll-page3 .person .word1 {
+  position: absolute;
+  background: url("../images/page2/word1.png") no-repeat center / cover;
+  width: 2.875rem;
+  height: 2.59375rem;
+  left: 0.21875rem;
+  bottom: 6.0625rem;
+}
+.page1 .scroll-page3 .person .word2 {
+  position: absolute;
+  background: url("../images/page2/word2.png") no-repeat center / cover;
+  width: 2.40625rem;
+  height: 2.1875rem;
+  left: 3.59375rem;
+  bottom: 7.65625rem;
+}
+.page1 .scroll-page3 .person .word3 {
+  position: absolute;
+  background: url("../images/page2/word3.png") no-repeat center / cover;
+  width: 3.59375rem;
+  height: 3.25rem;
+  right: 4.0625rem;
+  bottom: 6.875rem;
+}
+.page1 .scroll-page3 .person .word4 {
+  position: absolute;
+  background: url("../images/page2/word4.png") no-repeat center / cover;
+  width: 2.46875rem;
+  height: 2.28125rem;
+  right: 0.375rem;
+  bottom: 7.1875rem;
+}
+.page1 .scroll-page3 .message-container {
+  position: absolute;
+  bottom: 4.375rem;
+  right: 4.375rem;
+  background: url("../images/page2/txt-bubbl.png") no-repeat center / cover;
+  width: 11.34375rem;
+  height: 3.71875rem;
+  left: 50%;
+  margin-left: -5.671875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.page1 .scroll-page3 .message-container .info {
+  background: url("../images/page2/txt-res.png") no-repeat center / cover;
+  width: 6.875rem;
+  height: 0.9375rem;
+}
+.page1 .sphere {
+  position: absolute;
+  bottom: 0;
+  background: url("../images/page2/sphere1.png") no-repeat center / cover;
+  width: 20rem;
+  height: 11.125rem;
+  left: 50%;
+  margin-left: -10rem;
+}
+.page1 .bear {
+  position: absolute;
+  background: url("../images/page2/bear1.png") no-repeat center / cover;
+  width: 5.5625rem;
+  height: 4.1875rem;
+  bottom: 0;
+  right: 1.1875rem;
+  z-index: 1;
+}
+/*page1动画*/
+.page1 .scroll-page1 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroll-page1 .person {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroll-page1 .message-container {
+  opacity: 0;
+  transform-origin: right bottom;
+}
+.page1 .scroll-page2 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroll-page2 .person {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroll-page2 .person .leg2 {
+  transform-origin: left bottom;
+  transform: rotateZ(30deg);
+}
+.page1 .scroll-page2 .message-container {
+  opacity: 0;
+  transform-origin: right bottom;
+}
+.page1 .scroll-page3 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroll-page3 .person {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page1 .scroll-page3 .message-container {
+  opacity: 0;
+  transform-origin: right bottom;
+}
+@keyframes rotateInOut {
+  0% {
+    transform: rotateZ(90deg);
+  }
+  25% {
+    transform: rotateZ(-5deg);
+    opacity: 1;
+  }
+  30% {
+    transform: rotateZ(0);
+    opacity: 1;
+  }
+  65% {
+    transform: rotateZ(0);
+    opacity: 1;
+  }
+  70% {
+    transform: rotateZ(5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(-90deg);
+    opacity: 0;
+  }
+}
+@keyframes rotateInNotOut {
+  0% {
+    transform: rotateZ(90deg);
+  }
+  95% {
+    transform: rotateZ(-5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes runLeftRightUpDown {
+  25% {
+    transform: translateX(5%) translateY(0%);
+  }
+  50% {
+    transform: translateX(0%) translateY(5%);
+  }
+  75% {
+    transform: translateX(-5%) translateY(0%);
+  }
+  100% {
+    transform: translateX(0%) translateY(-5%);
+  }
+}
+@keyframes paperRun {
+  30% {
+    transform: translateX(50%);
+  }
+  60% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes legRun {
+  to {
+    transform: none;
+  }
+}
+.page1.animate .scroll-page1 .bg {
+  animation: rotateInOut 1.5s forwards;
+}
+.page1.animate .scroll-page1 .person {
+  animation: rotateInOut 1.5s 0.2s forwards;
+}
+.page1.animate .scroll-page1 .person .paper1 {
+  animation: paperRun 1s infinite;
+}
+.page1.animate .scroll-page1 .person .paper2 {
+  animation: paperRun 1s infinite;
+}
+.page1.animate .scroll-page1 .message-container {
+  animation: rotateInOut 1.5s 0.5s forwards;
+}
+.page1.animate .scroll-page2 .bg {
+  animation: rotateInOut 1.5s 1.7s forwards;
+}
+.page1.animate .scroll-page2 .person {
+  animation: rotateInOut 1.5s 1.9s forwards;
+}
+.page1.animate .scroll-page2 .person .leg2 {
+  animation: legRun 1s 2.2s forwards;
+}
+.page1.animate .scroll-page2 .message-container {
+  animation: rotateInOut 1.5s 2.2s forwards;
+}
+.page1.animate .scroll-page3 .bg {
+  animation: rotateInNotOut 0.5s 3.4s forwards;
+}
+.page1.animate .scroll-page3 .person {
+  animation: rotateInNotOut 0.5s 3.6s forwards;
+}
+.page1.animate .scroll-page3 .message-container {
+  animation: rotateInNotOut 0.5s 3.9s forwards;
+}
+.page1.animate .scroll-page3 .word1 {
+  animation: runLeftRightUpDown 0.5s infinite;
+}
+.page1.animate .scroll-page3 .word2 {
+  animation: runLeftRightUpDown 1s infinite;
+}
+.page1.animate .scroll-page3 .word3 {
+  animation: runLeftRightUpDown 1.2s infinite;
+}
+.page1.animate .scroll-page3 .word4 {
+  animation: runLeftRightUpDown 2s infinite;
+}
+/*page2*/
+.page2 {
+  background: #ee4143;
+}
+.page2 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0 0 0.46875rem 0.46875rem;
+}
+.page2 .title h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.page2 .title p {
+  font-size: 0.75rem;
+  color: #ffffff;
+  padding-top: 0.375rem;
+}
+.page2 .title .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #ffffff;
+}
+.page2 .scroll-page1 .bg {
+  position: absolute;
+  bottom: 10.3125rem;
+  background: url("../images/page3/bg4_.png") no-repeat center / cover;
+  width: 18.5rem;
+  height: 15.3125rem;
+  left: 50%;
+  margin-left: -9.25rem;
+}
+.page2 .scroll-page1 .person {
+  position: absolute;
+  bottom: 9.6875rem;
+  background: url("../images/page3/bear2.png") no-repeat -3.21875rem -3rem;
+  background-size: 11.5rem 13.34375rem;
+  width: 7.09375rem;
+  height: 10.5rem;
+  left: 50%;
+  margin-left: -3.546875rem;
+  z-index: 3;
+}
+.page2 .scroll-page1 .person .face1 {
+  position: absolute;
+  background: url("../images/page3/face1.png") no-repeat center / cover;
+  width: 3.1875rem;
+  height: 3.1875rem;
+  top: 0;
+  left: -50%;
+}
+.page2 .scroll-page1 .person .face2 {
+  position: absolute;
+  background: url("../images/page3/face2.png") no-repeat center / cover;
+  width: 3.15625rem;
+  height: 3.1875rem;
+  top: -3.1875rem;
+  right: -1.578125rem;
+}
+.page2 .scroll-page1 .person .hand-left {
+  position: absolute;
+  background: url("../images/page3/hand-left_.png") no-repeat center / cover;
+  width: 2.3125rem;
+  height: 2.40625rem;
+  top: 5.625rem;
+  left: 0.9375rem;
+}
+.page2 .scroll-page1 .person .hand-right {
+  position: absolute;
+  background: url("../images/page3/hand-right.png") no-repeat center / cover;
+  width: 2.3125rem;
+  height: 2.40625rem;
+  top: 5.625rem;
+  right: 0.9375rem;
+}
+.page2 .scroll-page1 .table {
+  position: absolute;
+  bottom: 4.375rem;
+  background: url("../images/page3/table.png") no-repeat center / cover;
+  width: 16.0625rem;
+  height: 8.0625rem;
+  left: 50%;
+  margin-left: -8.03125rem;
+  z-index: 4;
+}
+.page2 .scroll-page1 .food {
+  position: absolute;
+  bottom: 10.3125rem;
+  background: url("../images/page3/foods.png") no-repeat center / cover;
+  width: 11.0625rem;
+  height: 4.75rem;
+  left: 50%;
+  margin-left: -5.53125rem;
+  z-index: 4;
+}
+.page2 .scroll-page1 .sphere {
+  position: absolute;
+  bottom: 0;
+  background: url("../images/page2/sphere1.png") no-repeat center / cover;
+  width: 20rem;
+  height: 11.125rem;
+  left: 50%;
+  margin-left: -10rem;
+}
+.page2 .scroll-page1 .message-container {
+  position: absolute;
+  bottom: 4.375rem;
+  right: 4.375rem;
+  background: url("../images/page2/txt-bubbl.png") no-repeat center / cover;
+  width: 11.34375rem;
+  height: 3.71875rem;
+  left: 50%;
+  margin-left: -5.671875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.page2 .scroll-page1 .message-container .info {
+  background: url("../images/page2/txt-work.png") no-repeat center / cover;
+  width: 7.8125rem;
+  height: 0.96875rem;
+}
+.page2 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page2 .person {
+  opacity: 0;
+}
+.page2 .person .face1 {
+  opacity: 0;
+}
+.page2 .person .face2 {
+  opacity: 0;
+}
+.page2 .person .hand-left {
+  transform-origin: left top;
+}
+.page2 .person .hand-right {
+  transform-origin: right top;
+}
+.page2 .table {
+  opacity: 0;
+}
+.page2 .food {
+  opacity: 0;
+}
+@keyframes bottom2top {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes small2big2small {
+  0% {
+    transform: scale(0, 0);
+  }
+  90% {
+    transform: scale(1.5, 1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes shake {
+  30% {
+    transform: rotateZ(10deg);
+  }
+  60% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.page2.animate .bg {
+  animation: rotateInNotOut 0.5s 0.5s forwards;
+}
+.page2.animate .table {
+  animation: bearDown 0.5s 1s forwards;
+}
+.page2.animate .person {
+  animation: bottom2top 0.5s 1.5s forwards;
+}
+.page2.animate .person .face1 {
+  animation: small2big2small 0.5s 2.5s forwards;
+}
+.page2.animate .person .face2 {
+  animation: small2big2small 0.5s 2.5s forwards;
+}
+.page2.animate .person .hand-left {
+  animation: shake 0.5s infinite;
+}
+.page2.animate .person .hand-right {
+  animation: shake 0.5s infinite;
+}
+.page2.animate .food {
+  animation: bearDown 0.5s 2s forwards;
+}
+/*page3*/
+.page3 {
+  background: #dd8a03;
+}
+.page3 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0 0 0.46875rem 0.46875rem;
+}
+.page3 .title h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.page3 .title p {
+  font-size: 0.75rem;
+  color: #ffffff;
+  padding-top: 0.375rem;
+}
+.page3 .title .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #ffffff;
+}
+.page3 .bg {
+  position: absolute;
+  bottom: 9.375rem;
+  background: url("../images/page4/bg5.png") no-repeat center / cover;
+  width: 18.5rem;
+  height: 18.125rem;
+  left: 50%;
+  margin-left: -9.25rem;
+}
+.page3 .bear {
+  position: absolute;
+  bottom: 6.09375rem;
+  background: url("../images/page4/bear3.png") no-repeat center / cover;
+  width: 6.4375rem;
+  height: 10.03125rem;
+  left: 50%;
+  margin-left: -3.21875rem;
+  z-index: 2;
+}
+.page3 .sphere {
+  position: absolute;
+  bottom: 0;
+  background: url("../images/page4/sphere3.png") no-repeat center / cover;
+  width: 20rem;
+  height: 11.125rem;
+  left: 50%;
+  margin-left: -10rem;
+}
+.page3 .license {
+  position: absolute;
+  bottom: 15.625rem;
+  background: url("../images/page4/license.png") no-repeat center / cover;
+  width: 6.15625rem;
+  height: 4.375rem;
+  left: 1.25rem;
+}
+.page3 .oil {
+  position: absolute;
+  bottom: 20.625rem;
+  background: url("../images/page4/oil.png") no-repeat center / cover;
+  width: 6.40625rem;
+  height: 3.34375rem;
+  left: 7.03125rem;
+}
+.page3 .evil {
+  position: absolute;
+  bottom: 15rem;
+  background: url("../images/page4/evil2.png") no-repeat center / cover;
+  width: 6.1875rem;
+  height: 5.09375rem;
+  right: 0.9375rem;
+}
+.page3 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page3 .bear {
+  opacity: 0;
+}
+.page3 .animation-bear-box .bear1 {
+  position: absolute;
+  bottom: 6.09375rem;
+  background: url("../images/page4/bear3-1-1.png") no-repeat center / cover;
+  width: 7.84375rem;
+  height: 10.46875rem;
+  left: 50%;
+  margin-left: -3.921875rem;
+  z-index: 2;
+  opacity: 0;
+}
+.page3 .animation-bear-box .bear2 {
+  position: absolute;
+  bottom: 6.09375rem;
+  background: url("../images/page4/bear3-2-1.png") no-repeat center / cover;
+  width: 6.71875rem;
+  height: 9.78125rem;
+  left: 50%;
+  margin-left: -3.359375rem;
+  z-index: 2;
+  opacity: 0;
+}
+.page3 .animation-bear-box .bear3 {
+  position: absolute;
+  bottom: 6.09375rem;
+  background: url("../images/page4/bear3-3-1.png") no-repeat center / cover;
+  width: 9.0625rem;
+  height: 10.03125rem;
+  left: 50%;
+  margin-left: -4.53125rem;
+  z-index: 2;
+  opacity: 0;
+}
+.page3 .license {
+  opacity: 0;
+}
+.page3 .oil {
+  opacity: 0;
+}
+.page3 .evil {
+  opacity: 0;
+}
+.page3 .hit-card-box .card1 {
+  position: absolute;
+  bottom: 15.625rem;
+  background: url("../images/page4/license1.png") no-repeat center / cover;
+  width: 7.125rem;
+  height: 4.71875rem;
+  left: 1.25rem;
+  opacity: 0;
+}
+.page3 .hit-card-box .card2 {
+  position: absolute;
+  bottom: 20.625rem;
+  background: url("../images/page4/oil1.png") no-repeat center / cover;
+  width: 7.21875rem;
+  height: 4.875rem;
+  left: 7.03125rem;
+  opacity: 0;
+}
+.page3 .hit-card-box .card3 {
+  position: absolute;
+  bottom: 15rem;
+  background: url("../images/page4/evil21.png") no-repeat center / cover;
+  width: 6.59375rem;
+  height: 5.40625rem;
+  right: 0.9375rem;
+  opacity: 0;
+}
+.page3.animate .bg {
+  animation: rotateInNotOut 0.5s forwards;
+}
+.page3.animate .bear {
+  animation: bearDown 0.5s 0.5s forwards;
+}
+.page3.animate .license {
+  animation: small2big2small 0.5s 1s forwards, runLeftRightUpDown 0.5s 1.2s infinite;
+}
+.page3.animate .oil {
+  animation: small2big2small 0.5s 1s forwards, runLeftRightUpDown 0.5s 1.2s infinite;
+}
+.page3.animate .evil {
+  animation: small2big2small 0.5s 1s forwards, runLeftRightUpDown 0.5s 1.2s infinite;
+}
+/*page4*/
+.page4 {
+  background: #3fa100;
+}
+.page4 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0 0 0.46875rem 0.46875rem;
+}
+.page4 .title h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.page4 .title p {
+  font-size: 0.75rem;
+  color: #ffffff;
+  padding-top: 0.375rem;
+}
+.page4 .title .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #ffffff;
+}
+.page4 .bg {
+  position: absolute;
+  bottom: 9.375rem;
+  background: url("../images/page5/bg6.png") no-repeat center / cover;
+  width: 18.375rem;
+  height: 10.40625rem;
+  left: 50%;
+  margin-left: -9.1875rem;
+}
+.page4 .bear {
+  position: absolute;
+  bottom: 5.3125rem;
+  background: url("../images/page5/bear4.png") no-repeat center / cover;
+  width: 9.65625rem;
+  height: 10.15625rem;
+  left: 6.25rem;
+  z-index: 2;
+}
+.page4 .sphere {
+  position: absolute;
+  bottom: 0;
+  background: url("../images/page5/sphere4.png") no-repeat center / cover;
+  width: 20rem;
+  height: 11.125rem;
+  left: 50%;
+  margin-left: -10rem;
+}
+.page4 .card1 {
+  position: absolute;
+  bottom: 13.59375rem;
+  background: url("../images/page5/card1.png") no-repeat center / cover;
+  width: 5rem;
+  height: 5.46875rem;
+  left: 1rem;
+}
+.page4 .card2 {
+  position: absolute;
+  bottom: 16.5625rem;
+  background: url("../images/page5/card2.png") no-repeat center / cover;
+  width: 5.03125rem;
+  height: 6.53125rem;
+  left: 7.5rem;
+}
+.page4 .card3 {
+  position: absolute;
+  bottom: 13.125rem;
+  background: url("../images/page5/card1.png") no-repeat center / cover;
+  width: 5.21875rem;
+  height: 5.78125rem;
+  right: 1.40625rem;
+}
+/*page4动画*/
+.page4 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page4 .bear {
+  opacity: 0;
+}
+.page4 .card1 {
+  opacity: 0;
+}
+.page4 .card2 {
+  opacity: 0;
+}
+.page4 .card3 {
+  opacity: 0;
+}
+.page4.animate .bg {
+  animation: rotateInNotOut 0.5s forwards;
+}
+.page4.animate .bear {
+  animation: bearDown 0.5s 0.5s forwards;
+}
+.page4.animate .card1 {
+  animation: small2big2small 0.5s 1s forwards;
+}
+.page4.animate .card2 {
+  animation: small2big2small 0.5s 1s forwards;
+}
+.page4.animate .card3 {
+  animation: small2big2small 0.5s 1s forwards;
+}
+/*page5*/
+.page5 {
+  background: #0098cf;
+}
+.page5 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0 0 0.46875rem 0.46875rem;
+}
+.page5 .title h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.page5 .title p {
+  font-size: 0.75rem;
+  color: #ffffff;
+  padding-top: 0.375rem;
+}
+.page5 .title .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #ffffff;
+}
+.page5 .bg {
+  position: absolute;
+  bottom: 9.375rem;
+  background: url("../images/page6/bg7.png") no-repeat center / cover;
+  width: 18.5625rem;
+  height: 15.40625rem;
+  left: 50%;
+  margin-left: -9.28125rem;
+}
+.page5 .bear {
+  position: absolute;
+  bottom: 5.46875rem;
+  background: url("../images/page6/rider2.png") no-repeat center / cover;
+  width: 7.1875rem;
+  height: 12.1875rem;
+  left: 50%;
+  margin-left: -3.59375rem;
+  z-index: 2;
+}
+.page5 .bear .smoke {
+  position: absolute;
+  background: url("../images/page6/shadow.png") no-repeat center / cover;
+  width: 3.5625rem;
+  height: 0.8125rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.78125rem;
+}
+.page5 .sphere {
+  position: absolute;
+  bottom: 0;
+  background: url("../images/page6/sphere5.png") no-repeat center / cover;
+  width: 20rem;
+  height: 11.125rem;
+  left: 50%;
+  margin-left: -10rem;
+}
+.page5 .cloud {
+  position: absolute;
+  bottom: 20.15625rem;
+  background: url("../images/page6/weather-cloud.png") no-repeat center / cover;
+  width: 13.5rem;
+  height: 5rem;
+  left: 50%;
+  margin-left: -6.75rem;
+}
+/*page5动画*/
+.page5 .bg {
+  opacity: 0;
+  transform-origin: 50% 200%;
+}
+.page5 .bear {
+  opacity: 0;
+}
+.page5 .bear .smoke {
+  opacity: 0;
+}
+.page5 .cloud {
+  opacity: 0;
+}
+.page5.animate .bg {
+  animation: rotateInNotOut 0.5s 0.5s forwards;
+}
+.page5.animate .cloud {
+  animation: small2big2small 0.5s 1s forwards, runLeftRightUpDown 0.5s infinite;
+}
+.page5.animate .bear {
+  animation: bearDown 0.5s 1.5s forwards, uptodown 0.5s infinite;
+}
+.page5.animate .bear .smoke {
+  animation: small2big2small 0.5s 1.5s infinite;
+}
+/*page6*/
+.page6 {
+  background: #b527a0;
+}
+.page6 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0 0 0.46875rem 0.46875rem;
+}
+.page6 .title h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.page6 .title p {
+  font-size: 0.75rem;
+  color: #ffffff;
+  padding-top: 0.375rem;
+}
+.page6 .title .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #ffffff;
+}
+.page6 .bg {
+  position: absolute;
+  bottom: 9.375rem;
+  background: url("../images/page7/bg8.png") no-repeat center / cover;
+  width: 18.375rem;
+  height: 10.40625rem;
+  left: 50%;
+  margin-left: -9.1875rem;
+}
+.page6 .bear {
+  position: absolute;
+  bottom: 6.25rem;
+  background: url("../images/page7/bear5.png") no-repeat center / cover;
+  width: 8.90625rem;
+  height: 10.25rem;
+  left: 50%;
+  margin-left: -4.453125rem;
+  z-index: 2;
+}
+.page6 .bear .gift-box {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.page6 .bear .gift-box .gift1 {
+  position: absolute;
+  background: url("../images/page7/gift1.png") no-repeat center / cover;
+  width: 1.21875rem;
+  height: 0.78125rem;
+  transform: rotateZ(29deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift2 {
+  position: absolute;
+  background: url("../images/page7/gift2.png") no-repeat center / cover;
+  width: 2.90625rem;
+  height: 2.46875rem;
+  transform: rotateZ(58deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift3 {
+  position: absolute;
+  background: url("../images/page7/gift3.png") no-repeat center / cover;
+  width: 2.25rem;
+  height: 2rem;
+  transform: rotateZ(87deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift4 {
+  position: absolute;
+  background: url("../images/page7/gift4.png") no-repeat center / cover;
+  width: 2.84375rem;
+  height: 2.28125rem;
+  transform: rotateZ(116deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift5 {
+  position: absolute;
+  background: url("../images/page7/gift5.png") no-repeat center / cover;
+  width: 3.09375rem;
+  height: 2.03125rem;
+  transform: rotateZ(145deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift6 {
+  position: absolute;
+  background: url("../images/page7/gift6.png") no-repeat center / cover;
+  width: 3.34375rem;
+  height: 2.5rem;
+  transform: rotateZ(174deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift7 {
+  position: absolute;
+  background: url("../images/page7/gift7.png") no-repeat center / cover;
+  width: 3.34375rem;
+  height: 2.5rem;
+  transform: rotateZ(203deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift8 {
+  position: absolute;
+  background: url("../images/page7/gift9.png") no-repeat center / cover;
+  width: 2.4375rem;
+  height: 1.5625rem;
+  transform: rotateZ(232deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift9 {
+  position: absolute;
+  background: url("../images/page7/gift9.png") no-repeat center / cover;
+  width: 2.4375rem;
+  height: 1.5625rem;
+  transform: rotateZ(261deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift10 {
+  position: absolute;
+  background: url("../images/page7/gift10.png") no-repeat center / cover;
+  width: 1.53125rem;
+  height: 1.15625rem;
+  transform: rotateZ(290deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift11 {
+  position: absolute;
+  background: url("../images/page7/gift11.png") no-repeat center / cover;
+  width: 1.59375rem;
+  height: 0.96875rem;
+  transform: rotateZ(319deg) translateY(7.5rem);
+}
+.page6 .bear .gift-box .gift12 {
+  position: absolute;
+  background: url("../images/page7/gift12.png") no-repeat center / cover;
+  width: 1.15625rem;
+  height: 0.71875rem;
+  transform: rotateZ(340deg) translateY(7.5rem);
+}
+.page6 .sphere {
+  position: absolute;
+  bottom: 0;
+  background: url("../images/page7/sphere6.png") no-repeat center / cover;
+  width: 20rem;
+  height: 11.125rem;
+  left: 50%;
+  margin-left: -10rem;
+}
+/*page6动画*/
+.page6 .gift-box > div {
+  opacity: 0;
+}
+@keyframes giftRotate {
+  from {
+    transform: none;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.page6.animate .gift-box > div {
+  animation: giftRotate 2s infinite;
+}
+/*page7*/
+.page7 {
+  background: #19072a;
+}
+.page7 .title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0 0 0.46875rem 0.46875rem;
+}
+.page7 .title h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.page7 .title p {
+  font-size: 0.75rem;
+  color: #ffffff;
+  padding-top: 0.375rem;
+}
+.page7 .title .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #ffffff;
+}
+.page7 .bg {
+  position: absolute;
+  bottom: 9.375rem;
+  background: url("../images/page8/streetlight.png") no-repeat center / cover;
+  width: 2.5rem;
+  height: 13.84375rem;
+  left: 7.5rem;
+}
+.page7 .bg .lamplight {
+  position: absolute;
+  top: 0.9375rem;
+  background: url("../images/page8/lamplight.png") no-repeat center / cover;
+  width: 13.65625rem;
+  height: 13.34375rem;
+  left: -4.375rem;
+}
+.page7 .moto {
+  position: absolute;
+  bottom: 10.46875rem;
+  background: url("../images/page8/moto.png") no-repeat center / cover;
+  width: 6.25rem;
+  height: 4.28125rem;
+  left: 3.90625rem;
+}
+.page7 .bear {
+  position: absolute;
+  bottom: 8.75rem;
+  background: url("../images/page8/bear6.png") no-repeat center / cover;
+  width: 8.625rem;
+  height: 8.46875rem;
+  right: 3.75rem;
+  z-index: 2;
+}
+.page7 .sphere {
+  position: absolute;
+  bottom: 0;
+  background: url("../images/page8/sphere7.png") no-repeat center / cover;
+  width: 20rem;
+  height: 12rem;
+}
+.page7 .share {
+  position: absolute;
+  bottom: 4.375rem;
+  background: url("../images/page8/share.png") no-repeat center / cover;
+  width: 11.84375rem;
+  height: 3.53125rem;
+  left: 50%;
+  margin-left: -5.921875rem;
+}
+.page7 .baidu {
+  width: 100%;
+  position: absolute;
+  bottom: 2.1875rem;
+  font-size: 0.75rem;
+  color: #b579d6;
+  text-align: center;
+}
+.audioControl {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background: url("../images/pause.png") no-repeat center / cover;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9;
+}
+/*# sourceMappingURL=index.css.map */
